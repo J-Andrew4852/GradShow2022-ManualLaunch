@@ -1,5 +1,9 @@
 # Exhibition Space : Curtin Design Grad Show 2022
-This is the Git repo for the 2022 Curtin University Design Grad Show. 
+This is the Git repo for the 2022 Curtin University Design Grad Show (Manual Launch). 
+
+We can work on this website and after any pushes to main I will manually upload to SiteGround where the site will
+be live at the curtin domains. Or we can work on the previous GitHub repo and work on getting the curtin domain names
+into the Vercel website, as the Vercel website does function better.
 
 For **students contributing** to the project please refer to: [CONTRIBUTING.md](CONTRIBUTING.md)
 
