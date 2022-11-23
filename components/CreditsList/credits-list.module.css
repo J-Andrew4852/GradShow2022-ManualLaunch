@@ -1,0 +1,14 @@
+.container {
+    text-align: left;
+}
+
+.container li {
+    list-style: none;
+    line-height: 200%;
+}
+
+@media (max-width: 604px) {
+    .container {
+        text-align: center;
+    }
+}

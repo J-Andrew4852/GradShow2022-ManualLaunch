@@ -1,0 +1,224 @@
+.graduatePageContainer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.graduate_content {
+    display: grid;
+    grid-template-columns: 37.5% 57.5%;
+    grid-template-rows: max-content 1fr;
+    column-gap: 5%;
+    padding: 0 100px 0 100px ;
+    margin: 50px 0 50px 0;
+    color: var(--off-black);
+    min-height: 50em;
+}
+
+.graduate_photoContainer {
+    grid-area: 1 / 1 / -1 / 2 ;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.graduate_photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: opacity 0.2s ease-in-out;
+}
+/* .altImg {
+    opacity: 0;
+} */
+.graduate_photoContainer:hover .frontImg {
+    opacity: 0; 
+    cursor: pointer;
+}
+/* .graduate_photoContainer:hover .altImg {
+    opacity: 1;
+    cursor: pointer;
+} */
+
+.graduate_photo_small {
+    display: none;
+}
+
+.graduate_title {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+.graduate_major_patch {
+    position: relative;
+    grid-row: span 2;
+    width: 100px;
+    height: 100px;
+    margin-right: 2em;
+}
+
+/* .graduate_major_patch img {
+
+} */
+
+.graduate_name {
+    grid-area: 1 / 2 / 2 / -2 ;
+}
+
+.graduate_major {
+    grid-area: 2 / 2 / 3 / -2 ;
+}
+
+.graduate_bio {
+    grid-area: 3 / 1 / 4 / -1 ;
+    margin: 2em 0 3em 0 ;
+    line-height: 150%;
+}
+
+.graduate_details {
+    /* align-self: end; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.graduate_description {
+    margin-bottom: 50px;
+}
+
+.graduate_bio::first-letter, .graduate_description::first-letter {
+    text-transform: capitalize;
+}
+
+.graduate_links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.socialLinks {
+    height: auto;
+    width: 100%;
+}
+
+.socialLinks > div{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+
+
+/* ============= Image Grid ============= */
+.graduateImageGrid {
+    height: auto;
+    width: 100%;
+    padding: 50px 100px 0 100px;
+    margin-bottom: 100px;
+}
+
+.graduateImages {
+    height: 100%;
+    width: 100%;
+}
+
+.heroContainer {
+    position: relative;
+    overflow: hidden;
+    max-height: 60vw;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.heroContainer .gradHeroImage{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .graduatePageContainer {
+        margin-top: 50px;
+    }
+    
+    .graduate_content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px repeat(2, max-content);
+        row-gap: 50px;
+        padding: 20px 50px 0 50px ;
+        margin-bottom: 50px;
+    }
+
+    .graduateImageGrid {
+        padding: 20px 50px 0 50px ;
+    }
+
+    .graduate_photoContainer { display: none; }
+
+    .graduate_photo_small { 
+        grid-area: 1 / 1 / 2 / 2 ; 
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .graduate_photo_small .graduate_photo {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .graduate_photo_small:hover .frontImg {
+        opacity: 0; 
+        cursor: pointer;
+    }
+
+    .graduate_photo_small img {
+        object-position: 0 40%;
+    }
+
+    .graduate_title {
+        grid-area: 2 / 1 / 3 / -1 ;
+    }
+
+    .graduate_bio {
+        margin: 2rem 0 0 0;
+    }
+
+    .graduate_details { 
+        grid-area: 3 / 1 / 4 / -1 ;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .graduate_links {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+
+    .portfolio_link {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .graduate_content {
+        padding: 20px 30px 0 30px ;
+    }
+
+}

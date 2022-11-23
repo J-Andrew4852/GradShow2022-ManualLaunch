@@ -1,0 +1,36 @@
+.hamburger_container {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    gap: 7px;
+    margin-top: 5px;
+    cursor: pointer;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hamburger_container div {
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: var(--off-black);
+    transition: all 0.4s ease;
+}
+
+.hamburger_container div:last-child {
+    width: 50%;
+}
+
+.hamburger_container:hover div:last-child {
+    width: 100%;
+}
+
+.hamburger_container:hover div:not(last-child) {
+    width: 50%;
+}
+
+@media (min-width: 900px) {
+    .hamburger_container {
+        display: none;
+    }
+}
